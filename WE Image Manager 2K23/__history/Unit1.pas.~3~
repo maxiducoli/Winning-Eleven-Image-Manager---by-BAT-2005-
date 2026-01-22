@@ -1,0 +1,2461 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons, Grids, ExtCtrls, funcoes, ComCtrls,
+  jpeg, Vcl.Mask;
+
+type
+
+  TForm1 = class(TForm)
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    GroupBox1: TGroupBox;
+    SpeedButton1: TSpeedButton;
+    Label1: TLabel;
+    Label3: TLabel;
+    Imagemtmp: TImage;
+    Tab_graf: TStringGrid;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    Offsetgraf: TLabeledEdit;
+    largman: TLabeledEdit;
+    altman: TLabeledEdit;
+    lista2: TListBox;
+    lista: TListBox;
+    Label6: TLabel;
+    GroupBox6: TGroupBox;
+    Imagem: TImage;
+    GroupBox2: TGroupBox;
+    SpeedButton3: TSpeedButton;
+    Label4: TLabel;
+    Coreslab: TLabel;
+    Tab_pal: TStringGrid;
+    RadioButton3: TRadioButton;
+    RadioButton4: TRadioButton;
+    Offsetpal: TLabeledEdit;
+    Coresman: TComboBox;
+    Label5: TLabel;
+    SpeedButton5: TSpeedButton;
+    SpeedButton6: TSpeedButton;
+    GroupBox3: TGroupBox;
+    Label2: TLabel;
+    ComboBox1: TComboBox;
+    SpeedButton4: TSpeedButton;
+    GroupBox7: TGroupBox;
+    Shape0: TShape;
+    Shape1: TShape;
+    Shape2: TShape;
+    Shape3: TShape;
+    Shape4: TShape;
+    Shape5: TShape;
+    Shape6: TShape;
+    Shape7: TShape;
+    Shape8: TShape;
+    Shape9: TShape;
+    Shape10: TShape;
+    Shape11: TShape;
+    Shape12: TShape;
+    Shape13: TShape;
+    Shape14: TShape;
+    Shape15: TShape;
+    Shape16: TShape;
+    Shape17: TShape;
+    Shape18: TShape;
+    Shape19: TShape;
+    Shape20: TShape;
+    Shape21: TShape;
+    Shape22: TShape;
+    Shape23: TShape;
+    Shape24: TShape;
+    Shape25: TShape;
+    Shape26: TShape;
+    Shape27: TShape;
+    Shape28: TShape;
+    Shape29: TShape;
+    Shape30: TShape;
+    Shape31: TShape;
+    Shape32: TShape;
+    Shape33: TShape;
+    Shape34: TShape;
+    Shape35: TShape;
+    Shape36: TShape;
+    Shape37: TShape;
+    Shape38: TShape;
+    Shape39: TShape;
+    Shape40: TShape;
+    Shape41: TShape;
+    Shape42: TShape;
+    Shape43: TShape;
+    Shape44: TShape;
+    Shape45: TShape;
+    Shape46: TShape;
+    Shape47: TShape;
+    Shape48: TShape;
+    Shape49: TShape;
+    Shape50: TShape;
+    Shape51: TShape;
+    Shape52: TShape;
+    Shape53: TShape;
+    Shape54: TShape;
+    Shape55: TShape;
+    Shape56: TShape;
+    Shape57: TShape;
+    Shape58: TShape;
+    Shape59: TShape;
+    Shape60: TShape;
+    Shape61: TShape;
+    Shape62: TShape;
+    Shape63: TShape;
+    Shape64: TShape;
+    Shape65: TShape;
+    Shape66: TShape;
+    Shape67: TShape;
+    Shape68: TShape;
+    Shape69: TShape;
+    Shape70: TShape;
+    Shape71: TShape;
+    Shape72: TShape;
+    Shape73: TShape;
+    Shape74: TShape;
+    Shape75: TShape;
+    Shape76: TShape;
+    Shape77: TShape;
+    Shape78: TShape;
+    Shape79: TShape;
+    Shape80: TShape;
+    Shape81: TShape;
+    Shape82: TShape;
+    Shape83: TShape;
+    Shape84: TShape;
+    Shape85: TShape;
+    Shape86: TShape;
+    Shape87: TShape;
+    Shape88: TShape;
+    Shape89: TShape;
+    Shape90: TShape;
+    Shape91: TShape;
+    Shape92: TShape;
+    Shape93: TShape;
+    Shape94: TShape;
+    Shape95: TShape;
+    Shape96: TShape;
+    Shape97: TShape;
+    Shape98: TShape;
+    Shape99: TShape;
+    Shape100: TShape;
+    Shape101: TShape;
+    Shape102: TShape;
+    Shape103: TShape;
+    Shape104: TShape;
+    Shape105: TShape;
+    Shape106: TShape;
+    Shape107: TShape;
+    Shape108: TShape;
+    Shape109: TShape;
+    Shape110: TShape;
+    Shape111: TShape;
+    Shape112: TShape;
+    Shape113: TShape;
+    Shape114: TShape;
+    Shape115: TShape;
+    Shape116: TShape;
+    Shape117: TShape;
+    Shape118: TShape;
+    Shape119: TShape;
+    Shape120: TShape;
+    Shape121: TShape;
+    Shape122: TShape;
+    Shape123: TShape;
+    Shape124: TShape;
+    Shape125: TShape;
+    Shape126: TShape;
+    Shape127: TShape;
+    Shape128: TShape;
+    Shape129: TShape;
+    Shape130: TShape;
+    Shape131: TShape;
+    Shape132: TShape;
+    Shape133: TShape;
+    Shape134: TShape;
+    Shape135: TShape;
+    Shape136: TShape;
+    Shape137: TShape;
+    Shape138: TShape;
+    Shape139: TShape;
+    Shape140: TShape;
+    Shape141: TShape;
+    Shape142: TShape;
+    Shape143: TShape;
+    Shape144: TShape;
+    Shape145: TShape;
+    Shape146: TShape;
+    Shape147: TShape;
+    Shape148: TShape;
+    Shape149: TShape;
+    Shape150: TShape;
+    Shape151: TShape;
+    Shape152: TShape;
+    Shape153: TShape;
+    Shape154: TShape;
+    Shape155: TShape;
+    Shape156: TShape;
+    Shape157: TShape;
+    Shape158: TShape;
+    Shape159: TShape;
+    Shape160: TShape;
+    Shape161: TShape;
+    Shape162: TShape;
+    Shape163: TShape;
+    Shape164: TShape;
+    Shape165: TShape;
+    Shape166: TShape;
+    Shape167: TShape;
+    Shape168: TShape;
+    Shape169: TShape;
+    Shape170: TShape;
+    Shape171: TShape;
+    Shape172: TShape;
+    Shape173: TShape;
+    Shape174: TShape;
+    Shape175: TShape;
+    Shape176: TShape;
+    Shape177: TShape;
+    Shape178: TShape;
+    Shape179: TShape;
+    Shape180: TShape;
+    Shape181: TShape;
+    Shape182: TShape;
+    Shape183: TShape;
+    Shape184: TShape;
+    Shape185: TShape;
+    Shape186: TShape;
+    Shape187: TShape;
+    Shape188: TShape;
+    Shape189: TShape;
+    Shape190: TShape;
+    Shape191: TShape;
+    Shape192: TShape;
+    Shape193: TShape;
+    Shape194: TShape;
+    Shape195: TShape;
+    Shape196: TShape;
+    Shape197: TShape;
+    Shape198: TShape;
+    Shape199: TShape;
+    Shape200: TShape;
+    Shape201: TShape;
+    Shape202: TShape;
+    Shape203: TShape;
+    Shape204: TShape;
+    Shape205: TShape;
+    Shape206: TShape;
+    Shape207: TShape;
+    Shape208: TShape;
+    Shape209: TShape;
+    Shape210: TShape;
+    Shape211: TShape;
+    Shape212: TShape;
+    Shape213: TShape;
+    Shape214: TShape;
+    Shape215: TShape;
+    Shape216: TShape;
+    Shape217: TShape;
+    Shape218: TShape;
+    Shape219: TShape;
+    Shape220: TShape;
+    Shape221: TShape;
+    Shape222: TShape;
+    Shape223: TShape;
+    Shape224: TShape;
+    Shape225: TShape;
+    Shape226: TShape;
+    Shape227: TShape;
+    Shape228: TShape;
+    Shape229: TShape;
+    Shape230: TShape;
+    Shape231: TShape;
+    Shape232: TShape;
+    Shape233: TShape;
+    Shape234: TShape;
+    Shape235: TShape;
+    Shape236: TShape;
+    Shape237: TShape;
+    Shape238: TShape;
+    Shape239: TShape;
+    Shape240: TShape;
+    Shape241: TShape;
+    Shape242: TShape;
+    Shape243: TShape;
+    Shape244: TShape;
+    Shape245: TShape;
+    Shape246: TShape;
+    Shape247: TShape;
+    Shape248: TShape;
+    Shape249: TShape;
+    Shape250: TShape;
+    Shape251: TShape;
+    Shape252: TShape;
+    Shape253: TShape;
+    Shape254: TShape;
+    Shape255: TShape;
+    Salvar: TSaveDialog;
+    gravartxt: TSaveDialog;
+    Abrir2: TOpenDialog;
+    Abrir1: TOpenDialog;
+    GroupBox4: TGroupBox;
+    Clut0: TLabel;
+    Clut1: TLabel;
+    Clut2: TLabel;
+    Clut3: TLabel;
+    Clut4: TLabel;
+    Clut5: TLabel;
+    Clut6: TLabel;
+    Clut7: TLabel;
+    Clut8: TLabel;
+    Clut9: TLabel;
+    Clut10: TLabel;
+    Clut11: TLabel;
+    Clut12: TLabel;
+    Clut13: TLabel;
+    Clut15: TLabel;
+    Clut16: TLabel;
+    Clut17: TLabel;
+    Clut18: TLabel;
+    Clut19: TLabel;
+    Clut20: TLabel;
+    Clut21: TLabel;
+    Clut22: TLabel;
+    Clut23: TLabel;
+    Clut24: TLabel;
+    Clut25: TLabel;
+    Clut26: TLabel;
+    Clut27: TLabel;
+    Clut28: TLabel;
+    Clut29: TLabel;
+    Clut30: TLabel;
+    Clut31: TLabel;
+    Clut32: TLabel;
+    Clut33: TLabel;
+    Clut34: TLabel;
+    Clut35: TLabel;
+    Clut36: TLabel;
+    Clut37: TLabel;
+    Clut38: TLabel;
+    Clut39: TLabel;
+    Clut40: TLabel;
+    Clut41: TLabel;
+    Clut42: TLabel;
+    Clut43: TLabel;
+    Clut44: TLabel;
+    Clut45: TLabel;
+    Clut46: TLabel;
+    Clut47: TLabel;
+    Clut48: TLabel;
+    Clut49: TLabel;
+    Clut50: TLabel;
+    Clut51: TLabel;
+    Clut52: TLabel;
+    Clut53: TLabel;
+    Clut54: TLabel;
+    Clut55: TLabel;
+    Clut56: TLabel;
+    Clut57: TLabel;
+    Clut58: TLabel;
+    Clut59: TLabel;
+    Clut60: TLabel;
+    Clut61: TLabel;
+    Clut62: TLabel;
+    Clut63: TLabel;
+    Clut14: TLabel;
+    Clut64: TLabel;
+    Clut65: TLabel;
+    Clut66: TLabel;
+    Clut67: TLabel;
+    Clut68: TLabel;
+    Clut69: TLabel;
+    Clut70: TLabel;
+    Clut71: TLabel;
+    Clut72: TLabel;
+    Clut73: TLabel;
+    Clut74: TLabel;
+    Clut75: TLabel;
+    Clut76: TLabel;
+    Clut77: TLabel;
+    Clut78: TLabel;
+    Clut79: TLabel;
+    Clut80: TLabel;
+    Clut81: TLabel;
+    Clut82: TLabel;
+    Clut83: TLabel;
+    Clut84: TLabel;
+    Clut85: TLabel;
+    Clut86: TLabel;
+    Clut87: TLabel;
+    Clut88: TLabel;
+    Clut89: TLabel;
+    Clut90: TLabel;
+    Clut91: TLabel;
+    Clut92: TLabel;
+    Clut93: TLabel;
+    Clut94: TLabel;
+    Clut95: TLabel;
+    Clut96: TLabel;
+    Clut97: TLabel;
+    Clut98: TLabel;
+    Clut99: TLabel;
+    Clut100: TLabel;
+    Clut101: TLabel;
+    Clut102: TLabel;
+    Clut103: TLabel;
+    Clut104: TLabel;
+    Clut105: TLabel;
+    Clut106: TLabel;
+    Clut107: TLabel;
+    Clut108: TLabel;
+    Clut109: TLabel;
+    Clut110: TLabel;
+    Clut111: TLabel;
+    Clut112: TLabel;
+    Clut113: TLabel;
+    Clut114: TLabel;
+    Clut115: TLabel;
+    Clut116: TLabel;
+    Clut117: TLabel;
+    Clut118: TLabel;
+    Clut119: TLabel;
+    Clut120: TLabel;
+    Clut121: TLabel;
+    Clut122: TLabel;
+    Clut123: TLabel;
+    Clut124: TLabel;
+    Clut125: TLabel;
+    Clut126: TLabel;
+    Clut127: TLabel;
+    Clut128: TLabel;
+    Clut129: TLabel;
+    Clut130: TLabel;
+    Clut131: TLabel;
+    Clut132: TLabel;
+    Clut133: TLabel;
+    Clut134: TLabel;
+    Clut135: TLabel;
+    Clut136: TLabel;
+    Clut137: TLabel;
+    Clut138: TLabel;
+    Clut139: TLabel;
+    Clut140: TLabel;
+    Clut141: TLabel;
+    Clut142: TLabel;
+    Clut143: TLabel;
+    Clut144: TLabel;
+    Clut145: TLabel;
+    Clut146: TLabel;
+    Clut147: TLabel;
+    Clut148: TLabel;
+    Clut149: TLabel;
+    Clut150: TLabel;
+    Clut151: TLabel;
+    Clut152: TLabel;
+    Clut153: TLabel;
+    Clut154: TLabel;
+    Clut155: TLabel;
+    Clut156: TLabel;
+    Clut157: TLabel;
+    Clut158: TLabel;
+    Clut159: TLabel;
+    Clut160: TLabel;
+    Clut161: TLabel;
+    Clut162: TLabel;
+    Clut163: TLabel;
+    Clut164: TLabel;
+    Clut165: TLabel;
+    Clut166: TLabel;
+    Clut167: TLabel;
+    Clut168: TLabel;
+    Clut169: TLabel;
+    Clut170: TLabel;
+    Clut171: TLabel;
+    Clut172: TLabel;
+    Clut173: TLabel;
+    Clut174: TLabel;
+    Clut175: TLabel;
+    Clut176: TLabel;
+    Clut177: TLabel;
+    Clut178: TLabel;
+    Clut179: TLabel;
+    Clut180: TLabel;
+    Clut181: TLabel;
+    Clut182: TLabel;
+    Clut183: TLabel;
+    Clut184: TLabel;
+    Clut185: TLabel;
+    Clut186: TLabel;
+    Clut187: TLabel;
+    Clut188: TLabel;
+    Clut189: TLabel;
+    Clut190: TLabel;
+    Clut191: TLabel;
+    Clut192: TLabel;
+    Clut193: TLabel;
+    Clut194: TLabel;
+    Clut195: TLabel;
+    Clut196: TLabel;
+    Clut197: TLabel;
+    Clut198: TLabel;
+    Clut199: TLabel;
+    Clut200: TLabel;
+    Clut201: TLabel;
+    Clut202: TLabel;
+    Clut203: TLabel;
+    Clut204: TLabel;
+    Clut205: TLabel;
+    Clut206: TLabel;
+    Clut207: TLabel;
+    Clut208: TLabel;
+    Clut209: TLabel;
+    Clut210: TLabel;
+    Clut211: TLabel;
+    Clut212: TLabel;
+    Clut213: TLabel;
+    Clut214: TLabel;
+    Clut215: TLabel;
+    Clut216: TLabel;
+    Clut217: TLabel;
+    Clut218: TLabel;
+    Clut219: TLabel;
+    Clut220: TLabel;
+    Clut221: TLabel;
+    Clut222: TLabel;
+    Clut223: TLabel;
+    Clut224: TLabel;
+    Clut225: TLabel;
+    Clut226: TLabel;
+    Clut227: TLabel;
+    Clut228: TLabel;
+    Clut229: TLabel;
+    Clut230: TLabel;
+    Clut231: TLabel;
+    Clut232: TLabel;
+    Clut233: TLabel;
+    Clut234: TLabel;
+    Clut235: TLabel;
+    Clut236: TLabel;
+    Clut237: TLabel;
+    Clut238: TLabel;
+    Clut239: TLabel;
+    Clut240: TLabel;
+    Clut241: TLabel;
+    Clut242: TLabel;
+    Clut243: TLabel;
+    Clut244: TLabel;
+    Clut245: TLabel;
+    Clut246: TLabel;
+    Clut247: TLabel;
+    Clut248: TLabel;
+    Clut249: TLabel;
+    Clut250: TLabel;
+    Clut251: TLabel;
+    Clut252: TLabel;
+    Clut253: TLabel;
+    Clut254: TLabel;
+    Clut255: TLabel;
+    SelCor: TShape;
+    SelCor2: TShape;
+    GroupBox5: TGroupBox;
+    Label263: TLabel;
+    Label264: TLabel;
+    Label265: TLabel;
+    SpeedButton7: TSpeedButton;
+    SpeedButton8: TSpeedButton;
+    Label266: TLabel;
+    Label267: TLabel;
+    Label268: TLabel;
+    ScrollBar1: TScrollBar;
+    ScrollBar2: TScrollBar;
+    ScrollBar3: TScrollBar;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    GrupoRGB: TGroupBox;
+    CorRgb: TPanel;
+    StaticText1: TStaticText;
+    Button1: TButton;
+    Button2: TButton;
+    Image1: TImage;
+    imgtmp: TImage;
+    Imgins: TImage;
+    Button3: TButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton9: TSpeedButton;
+    SpeedButton10: TSpeedButton;
+    GroupBox8: TGroupBox;
+    Label7: TLabel;
+    Salvarbin: TSaveDialog;
+    Button4: TButton;
+    procedure terminaform;
+    procedure mudapaleta;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+    procedure SpeedButton4Click(Sender: TObject);
+    procedure SpeedButton6Click(Sender: TObject);
+    procedure SpeedButton5Click(Sender: TObject);
+    procedure Tab_grafClick(Sender: TObject);
+    procedure Tab_palClick(Sender: TObject);
+    procedure RadioButton2Click(Sender: TObject);
+    procedure RadioButton4Click(Sender: TObject);
+    procedure RadioButton1Click(Sender: TObject);
+    procedure RadioButton3Click(Sender: TObject);
+    procedure OffsetpalChange(Sender: TObject);
+    procedure CoresmanChange(Sender: TObject);
+    procedure OffsetgrafChange(Sender: TObject);
+    procedure largmanChange(Sender: TObject);
+    procedure altmanChange(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure ImagemClick(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
+    procedure PegaRgb;
+    procedure ScrollBar1Change(Sender: TObject);
+    procedure ScrollBar2Change(Sender: TObject);
+    procedure ScrollBar3Change(Sender: TObject);
+    procedure Clickclut(Sender: TObject);
+    procedure SpeedButton7Click(Sender: TObject);
+    procedure SpeedButton8Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure PageControl1Change(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+  private
+    counter, modif: integer;
+    aNovo: array of string;
+    FlagVi1: boolean;
+    FlagVi2: boolean;
+    aGrafDef: array of integer;
+    CorRed, CorGreen, CorBlue, numlabel: byte;
+    cores: integer;
+    aPalDef: array of string;
+    aPalMod: array of string;
+    dobro, Bug1, bug2, bug3: boolean;
+    copiacor: tcolor;
+    aGraf2: array of string;
+    aGraf: array of string;
+    Procedure termina(tipo: byte);
+    Procedure apagatab(tipo: byte);
+    function preenche(str: string; tam: integer; tipo: byte): string;
+    function tamanho(off: integer): integer;
+    procedure gravar;
+    procedure pinta(tipo: byte);
+    procedure visualiza(tipo: byte);
+    procedure montaclut;
+    { Private declarations }
+  public
+
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+uses Unit2, Unit3, Unit4;
+
+{$R *.dfm}
+
+procedure TForm1.SpeedButton1Click(Sender: TObject);
+var
+  Arq1: TFileStream;
+  x, npos: integer;
+  b, c: integer;
+  aBuffer: array of char;
+  h: integer;
+  he: string;
+  offset: integer;
+  busca, valor: integer;
+
+begin
+  if Abrir1.execute then
+  begin
+    apagatab(1);
+    FlagVi1 := true;
+    if RadioButton2.checked then
+    begin
+      Offsetgraf.enabled := true;
+      largman.enabled := true;
+      altman.enabled := true;
+    end;
+    if FlagVi1 and FlagVi2 then
+    begin
+
+      SpeedButton5.enabled := true;
+      PageControl1.pages[1].TabVisible := true;
+      SpeedButton6.enabled := true;
+      ComboBox1.enabled := true;
+      Imagem.enabled := true;
+    end;
+    Label1.Caption := Abrir1.FileName;
+    Arq1 := TFileStream.Create(Abrir1.FileName, fmOpenRead);
+    x := Arq1.Size;
+    setlength(aBuffer, x);
+    setlength(aGraf, x);
+    Arq1.Position := 0;
+    Arq1.Read(Pointer(aBuffer)^, x);
+    for b := 0 to x - 1 do
+    begin
+      h := Ord(aBuffer[b]);
+      he := inttohex(h, 2);
+      aGraf[b] := he;
+    end;
+    Arq1.Free;
+    lista.Clear;
+    for b := 0 to x - 16 do
+    begin
+
+      If (aGraf[b] = '0A') and (aGraf[b + 1] = '00') and (aGraf[b + 10] = '00')
+        and (aGraf[b + 11] = '00') and (aGraf[b + 15] = '80') and
+        ((aGraf[b + 14] = '10') or (aGraf[b + 14] = '11') or
+        (aGraf[b + 14] = '12') or (aGraf[b + 14] = '0C') or
+        (aGraf[b + 14] = '0D') or (aGraf[b + 14] = '0E') or
+        (aGraf[b + 14] = '0F') or (aGraf[b + 14] = '08')) then
+      begin
+        offset := 0;
+        If aGraf[b + 14] = '08' Then
+          offset := strtoint('$' + aGraf[b + 13] + aGraf[b + 12]) + 5320;
+        If aGraf[b + 14] = '0C' Then
+          offset := strtoint('$' + aGraf[b + 13] + aGraf[b + 12]) - 32768;
+        If aGraf[b + 14] = '0D' Then
+          offset := strtoint('$' + aGraf[b + 13] + aGraf[b + 12]) + 32768;
+        If aGraf[b + 14] = '0E' Then
+          offset := strtoint('$' + aGraf[b + 13] + aGraf[b + 12]) + 98304;
+        If aGraf[b + 14] = '0F' Then
+          offset := strtoint('$' + aGraf[b + 13] + aGraf[b + 12]);
+        If aGraf[b + 14] = '10' Then
+          offset := strtoint('$' + '1' + aGraf[b + 13] + aGraf[b + 12]);
+        If aGraf[b + 14] = '11' Then
+          offset := strtoint('$' + '2' + aGraf[b + 13] + aGraf[b + 12]);
+        If aGraf[b + 14] = '12' Then
+          offset := strtoint('$' + '3' + aGraf[b + 13] + aGraf[b + 12]);
+
+        Tab_graf.cells[0, Tab_graf.RowCount - 1] :=
+          inttostr(Tab_graf.RowCount - 1);
+        Tab_graf.cells[1, Tab_graf.RowCount - 1] := inttostr(offset);
+        Tab_graf.cells[2, Tab_graf.RowCount - 1] := inttohex(offset, 4);
+        Tab_graf.cells[3, Tab_graf.RowCount - 1] :=
+          inttostr(strtoint('$' + aGraf[b + 3] + aGraf[b + 2]));
+        Tab_graf.cells[4, Tab_graf.RowCount - 1] :=
+          inttostr(strtoint('$' + aGraf[b + 5] + aGraf[b + 4]));
+        Tab_graf.cells[5, Tab_graf.RowCount - 1] :=
+          inttostr(strtoint('$' + aGraf[b + 7] + aGraf[b + 6]) * 2);
+        Tab_graf.cells[6, Tab_graf.RowCount - 1] :=
+          inttostr(strtoint('$' + aGraf[b + 9] + aGraf[b + 8]));
+        Tab_graf.cells[7, Tab_graf.RowCount - 1] := inttostr(tamanho(offset));
+        Tab_graf.RowCount := Tab_graf.RowCount + 1;
+
+        lista.items.add(inttostr(offset));
+      end;
+    end;
+    Tab_graf.RowCount := Tab_graf.RowCount - 1;
+
+    Offsetgraf.Text := Tab_graf.cells[1, 1];
+    largman.Text := Tab_graf.cells[5, 1];
+    altman.Text := Tab_graf.cells[6, 1];
+    if FlagVi1 and FlagVi2 then
+    begin
+      screen.cursor := crHourGlass;
+      visualiza(1);
+    end;
+  end;
+end;
+
+const
+  crLupa = 5;
+
+procedure TForm1.FormCreate(Sender: TObject);
+var
+  g: byte;
+begin
+  PageControl1.ActivePageIndex := 0;
+  PageControl1.pages[1].TabVisible := false;
+  ComboBox1.ItemIndex := 0;
+  { Define tamanho das Colunas }
+  Tab_graf.RowCount := 2;
+  for g := 0 to 7 do
+    Tab_graf.cells[g, 1] := '';
+  Tab_graf.ColWidths[0] := 30;
+  Tab_graf.ColWidths[1] := 80;
+  Tab_graf.ColWidths[2] := 90;
+  Tab_graf.ColWidths[3] := 60;
+  Tab_graf.ColWidths[4] := 50;
+  Tab_graf.ColWidths[5] := 50;
+  Tab_graf.ColWidths[6] := 50;
+  Tab_graf.ColWidths[7] := 52;
+
+  Tab_pal.RowCount := 2;
+  for g := 0 to 8 do
+    Tab_pal.cells[g, 1] := '';
+  Tab_pal.ColWidths[0] := 30;
+  Tab_pal.ColWidths[1] := 80;
+  Tab_pal.ColWidths[2] := 90;
+  Tab_pal.ColWidths[3] := 60;
+  Tab_pal.ColWidths[4] := 50;
+  Tab_pal.ColWidths[5] := 50;
+  Tab_pal.ColWidths[6] := 50;
+  Tab_pal.ColWidths[7] := 52;
+  Tab_pal.ColWidths[8] := 40;
+
+  { Cabeçalho Gráfico }
+  Tab_graf.cells[0, 0] := 'ID';
+  Tab_graf.cells[1, 0] := 'Offset Decimal';
+  Tab_graf.cells[2, 0] := 'Offset Hexadec.';
+  Tab_graf.cells[3, 0] := 'VRAM X';
+  Tab_graf.cells[4, 0] := 'VRAM Y';
+  Tab_graf.cells[5, 0] := 'Largura';
+  Tab_graf.cells[6, 0] := 'Altura';
+  Tab_graf.cells[7, 0] := 'Tamanho';
+
+  { Cabeçalho Palheta }
+  Tab_pal.cells[0, 0] := 'ID';
+  Tab_pal.cells[1, 0] := 'Offset Decimal';
+  Tab_pal.cells[2, 0] := 'Offset Hexadec.';
+  Tab_pal.cells[3, 0] := 'VRAM X';
+  Tab_pal.cells[4, 0] := 'VRAM Y';
+  Tab_pal.cells[5, 0] := 'Largura';
+  Tab_pal.cells[6, 0] := 'Altura';
+  Tab_pal.cells[7, 0] := 'Tamanho';
+  Tab_pal.cells[8, 0] := 'Cores';
+
+  screen.Cursors[crLupa] := LoadCursor(HInstance, PChar('CURWE'));
+end;
+
+procedure TForm1.SpeedButton3Click(Sender: TObject);
+var
+  Arq2: TFileStream;
+  x: integer;
+  b: integer;
+  aBuffer2: array of char;
+  h: integer;
+  he: string;
+  offset, offdif, off, tempor: integer;
+  c, npos, valor: integer;
+  busca, busca2: integer;
+
+begin
+  if Abrir2.execute then
+  begin
+
+    Button4.enabled := false;
+    screen.cursor := crHourGlass;
+    apagatab(2);
+    FlagVi2 := true;
+    if (RadioButton4.checked) then
+    begin
+      Offsetpal.enabled := true;
+      Coresman.enabled := true;
+      Coreslab.enabled := true;
+    end;
+
+    if FlagVi1 and FlagVi2 then
+    begin
+      SpeedButton6.enabled := true;
+      SpeedButton5.enabled := true;
+      PageControl1.pages[1].TabVisible := true;
+      ComboBox1.enabled := true;
+      Imagem.enabled := true;
+    end;
+
+    Label4.Caption := Abrir2.FileName;
+    Arq2 := TFileStream.Create(Abrir2.FileName, fmOpenRead);
+    x := Arq2.Size;
+    setlength(aBuffer2, x);
+    setlength(aGraf2, x);
+    Arq2.Position := 0;
+    Arq2.Read(Pointer(aBuffer2)^, x);
+    for b := 0 to x - 1 do
+    begin
+      h := Ord(aBuffer2[b]);
+      he := inttohex(h, 2);
+      aGraf2[b] := he;
+    end;
+    Arq2.Free;
+    lista2.Clear;
+    for b := 0 to x - 16 do
+    begin
+      if ((aGraf2[b] = '09') and (aGraf2[b + 10] = '00') and
+        (aGraf2[b + 11] = '00') and (aGraf2[b + 15] = '80') and
+        ((aGraf2[b + 14] = '10') or (aGraf2[b + 14] = '11') or
+        (aGraf2[b + 14] = '12') or (aGraf2[b + 14] = '0C') or
+        (aGraf2[b + 14] = '0D') or (aGraf2[b + 14] = '0E') or
+        (aGraf2[b + 14] = '0F') or (aGraf2[b + 14] = '08'))) then
+
+      begin
+        offset := 0;
+
+        If aGraf2[b + 14] = '08' Then
+          offset := strtoint('$' + aGraf2[b + 13] + aGraf2[b + 12]) + 5352;
+        If aGraf2[b + 14] = '0C' Then
+          offset := strtoint('$' + aGraf2[b + 13] + aGraf2[b + 12]) - 32768;
+        If aGraf2[b + 14] = '0D' Then
+          offset := strtoint('$' + aGraf2[b + 13] + aGraf2[b + 12]) + 32768;
+        If aGraf2[b + 14] = '0E' Then
+          offset := strtoint('$' + aGraf2[b + 13] + aGraf2[b + 12]) + 98304;
+        If aGraf2[b + 14] = '0F' Then
+          offset := strtoint('$' + aGraf2[b + 13] + aGraf2[b + 12]);
+        If aGraf2[b + 14] = '10' Then
+          offset := strtoint('$' + '1' + aGraf2[b + 13] + aGraf2[b + 12]);
+        If aGraf2[b + 14] = '11' Then
+          offset := strtoint('$' + '2' + aGraf2[b + 13] + aGraf2[b + 12]);
+        If aGraf2[b + 14] = '12' Then
+          offset := strtoint('$' + '3' + aGraf2[b + 13] + aGraf2[b + 12]);
+
+        Tab_pal.cells[0, Tab_pal.RowCount - 1] :=
+          inttostr(Tab_pal.RowCount - 1);
+        Tab_pal.cells[1, Tab_pal.RowCount - 1] := inttostr(offset);
+        Tab_pal.cells[2, Tab_pal.RowCount - 1] := inttohex(offset, 4);
+        Tab_pal.cells[3, Tab_pal.RowCount - 1] :=
+          inttostr(strtoint('$' + aGraf2[b + 3] + aGraf2[b + 2]));
+        Tab_pal.cells[4, Tab_pal.RowCount - 1] :=
+          inttostr(strtoint('$' + aGraf2[b + 5] + aGraf2[b + 4]));
+        Tab_pal.cells[5, Tab_pal.RowCount - 1] :=
+          inttostr(strtoint('$' + aGraf2[b + 7] + aGraf2[b + 6]) * 2);
+        Tab_pal.cells[6, Tab_pal.RowCount - 1] :=
+          inttostr(strtoint('$' + aGraf2[b + 9] + aGraf2[b + 8]));
+        Tab_pal.RowCount := Tab_pal.RowCount + 1;
+
+        lista2.items.add(inttostr(offset));
+
+      end;
+      If (aGraf2[b] = '0A') and (aGraf2[b + 1] = '00') and
+        (aGraf2[b + 10] = '00') and (aGraf2[b + 11] = '00') and
+        (aGraf2[b + 15] = '80') and
+        ((aGraf2[b + 14] = '10') or (aGraf2[b + 14] = '11') or
+        (aGraf2[b + 14] = '12') or (aGraf2[b + 14] = '0C') or
+        (aGraf2[b + 14] = '0D') or (aGraf2[b + 14] = '0E') or
+        (aGraf2[b + 14] = '0F') or (aGraf2[b + 14] = '08')) then
+      begin
+        If aGraf2[b + 14] = '08' Then
+          offset := strtoint('$' + aGraf2[b + 13] + aGraf2[b + 12]) + 5320;
+        If aGraf2[b + 14] = '0C' Then
+          offset := strtoint('$' + aGraf2[b + 13] + aGraf2[b + 12]) - 32768;
+        If aGraf2[b + 14] = '0D' Then
+          offset := strtoint('$' + aGraf2[b + 13] + aGraf2[b + 12]) + 32768;
+        If aGraf2[b + 14] = '0E' Then
+          offset := strtoint('$' + aGraf2[b + 13] + aGraf2[b + 12]) + 98304;
+        If aGraf2[b + 14] = '0F' Then
+          offset := strtoint('$' + aGraf2[b + 13] + aGraf2[b + 12]);
+        If aGraf2[b + 14] = '10' Then
+          offset := strtoint('$' + '1' + aGraf2[b + 13] + aGraf2[b + 12]);
+        If aGraf2[b + 14] = '11' Then
+          offset := strtoint('$' + '2' + aGraf2[b + 13] + aGraf2[b + 12]);
+        If aGraf2[b + 14] = '12' Then
+          offset := strtoint('$' + '3' + aGraf2[b + 13] + aGraf2[b + 12]);
+
+        lista2.items.add(inttostr(offset));
+      end;
+
+    end;
+    Tab_pal.RowCount := Tab_pal.RowCount - 1;
+
+    for b := 0 to Tab_pal.RowCount - 3 do
+    begin
+      for c := 0 to lista2.count - 1 do
+      begin
+        if strtoint(lista2.items.strings[c]) = strtoint(Tab_pal.cells[1, b + 1])
+        then
+          npos := c;
+      end;
+
+      valor := strtoint(Tab_pal.cells[1, b + 2]);
+      tempor := strtoint(lista2.items.strings[npos + 1]) -
+        strtoint(lista2.items.strings[npos]);
+      Tab_pal.cells[7, b + 1] :=
+        inttostr(strtoint(lista2.items.strings[npos + 1]) -
+        strtoint(lista2.items.strings[npos]));
+      Tab_pal.cells[8, b + 1] :=
+        inttostr(strtoint(Tab_pal.cells[7, b + 1]) div 2);
+
+      if ((aGraf2[valor - 32] = '0A') and (aGraf2[valor - 31] = '00') and
+        (aGraf2[valor - 23] = '00') and (aGraf2[valor - 22] = '00') and
+        (aGraf2[valor - 17] = '80') and ((aGraf2[valor - 18] = '10') or
+        (aGraf2[valor - 18] = '11') or (aGraf2[valor - 18] = '12') or
+        (aGraf2[valor - 18] = '0C') or (aGraf2[valor - 18] = '0D') or
+        (aGraf2[valor - 18] = '0E') or (aGraf2[valor - 18] = '0F') or
+        (aGraf2[valor - 18] = '08'))) or
+        ((aGraf2[valor - 32] = '09') and (aGraf2[valor - 23] = '00') and
+        (aGraf2[valor - 22] = '00') and (aGraf2[valor - 17] = '80') and
+        ((aGraf2[valor - 18] = '10') or (aGraf2[valor - 18] = '11') or
+        (aGraf2[valor - 18] = '12') or (aGraf2[valor - 18] = '0C') or
+        (aGraf2[valor - 18] = '0D') or (aGraf2[valor - 18] = '0E') or
+        (aGraf2[valor - 18] = '0F') or (aGraf2[valor - 18] = '08'))) then
+
+        tempor := strtoint(lista2.items.strings[npos + 1]) -
+          strtoint(lista2.items.strings[npos]) - 32;
+      Tab_pal.cells[7, b + 1] := inttostr(tempor);
+      Tab_pal.cells[8, b + 1] := inttostr(tempor div 2);
+
+    end;
+
+    busca := strtoint(Tab_pal.cells[1, Tab_pal.RowCount - 1]);
+
+    repeat
+      busca := busca + 1;
+    until ((aGraf2[busca] = '0A') and (aGraf2[busca + 1] = '00') and
+      (aGraf2[busca + 10] = '00') and (aGraf2[busca + 11] = '00') and
+      (aGraf2[busca + 15] = '80') and ((aGraf2[busca + 14] = '10') or
+      (aGraf2[busca + 14] = '11') or (aGraf2[busca + 14] = '12') or
+      (aGraf2[busca + 14] = '0C') or (aGraf2[busca + 14] = '0D') or
+      (aGraf2[busca + 14] = '0E') or (aGraf2[busca + 14] = '0F') or
+      (aGraf2[busca + 14] = '08'))) or
+      ((aGraf2[busca] = '09') and (aGraf2[busca + 10] = '00') and
+      (aGraf2[busca + 11] = '00') and (aGraf2[busca + 15] = '80') and
+      ((aGraf2[busca + 14] = '10') or (aGraf2[busca + 14] = '11') or
+      (aGraf2[busca + 14] = '12') or (aGraf2[busca + 14] = '0C') or
+      (aGraf2[busca + 14] = '0D') or (aGraf2[busca + 14] = '0E') or
+      (aGraf2[busca + 14] = '0F') or (aGraf2[busca + 14] = '08')));
+
+    tempor := busca - strtoint(Tab_pal.cells[1, Tab_pal.RowCount - 1]);
+    Tab_pal.cells[7, Tab_pal.RowCount - 1] := inttostr(tempor);
+    Tab_pal.cells[8, Tab_pal.RowCount - 1] := inttostr(tempor div 2);
+
+    if strtoint(Tab_pal.cells[8, 1]) = 16 then
+    begin
+      cores := 16;
+      Coresman.ItemIndex := 0;
+    end
+    else
+    begin
+      cores := 256;
+      Coresman.ItemIndex := 1;
+    end;
+    Coresman.Refresh;
+    Offsetpal.Text := Tab_pal.cells[1, 1];
+    montaclut;
+    if FlagVi1 and FlagVi2 then
+    begin
+      screen.cursor := crHourGlass;
+      visualiza(1);
+    end;
+  end;
+end;
+
+procedure TForm1.SpeedButton4Click(Sender: TObject);
+begin
+
+  Form2.Showmodal;
+end;
+
+procedure TForm1.visualiza(tipo: byte);
+var
+  orig: integer;
+  k: integer;
+  k2: integer;
+  j: integer;
+  k3: integer;
+  i: integer;
+  nloop, tmp: integer;
+  bb: integer;
+  bits: byte;
+begin
+
+  // Rotina de descompressão
+
+  setlength(aNovo, 300000);
+  for bb := 0 to 299999 do
+    aNovo[bb] := '00';
+  counter := 0;
+  i := 0;
+  modif := 2000;
+  orig := strtoint(Offsetgraf.Text);
+  bits := 4;
+  While (true) do
+  begin
+    If (i And 256) = 0 Then
+    begin
+      k := (strtoint('$' + aGraf[orig]));
+      orig := orig + 1;
+      counter := counter + 1;
+      i := k + 65280;
+    end;
+    k2 := (strtoint('$' + aGraf[orig]));
+
+    If (i And 1) = 0 Then
+    begin
+      aNovo[modif] := inttohex(k2, 2);
+      modif := modif + 1;
+      orig := orig + 1;
+      counter := counter + 1;
+    End
+    else
+    begin
+      If (k2 And 128) <> 0 Then
+      begin
+        orig := orig + 1;
+        counter := counter + 1;
+        If (k2 And 64) <> 0 Then
+        begin
+          k := k2;
+          k3 := k - 185;
+          If k = 255 Then
+          begin
+            termina(tipo);
+            exit;
+          end;
+          for nloop := k3 downto 0 do
+          begin
+            k2 := (strtoint('$' + aGraf[orig]));
+            orig := orig + 1;
+            modif := modif + 1;
+            aNovo[modif - 1] := inttohex(k2, 2);
+          end;
+          counter := counter + k3;
+
+          i := i shr 1;
+          continue;
+
+        end;
+        j := (k2 And 15) + 1;
+        k3 := (k2 shr 4) - 7;
+      End
+      else
+      begin
+        j := (strtoint('$' + aGraf[orig + 1]));
+        orig := orig + 2;
+        counter := counter + 2;
+        k3 := (k2 shr 2) + 2;
+        j := j Or (k2 And 3) shl 8;
+      End;
+      for nloop := k3 downto 0 do
+      begin
+        tmp := (strtoint('$' + aNovo[modif - j]));
+        aNovo[modif] := inttohex(tmp, 2);
+        modif := modif + 1;
+      end;
+    End;
+    i := i shr 1;
+  end;
+
+end;
+
+procedure TForm1.termina(tipo: byte);
+var
+  k, pos, col, lin, mat, alt, larg, offpal, xx, xx2: integer;
+  cor: string;
+  mult: byte;
+  nvezes: integer;
+
+begin
+
+  alt := strtoint(altman.Text);
+  larg := strtoint(largman.Text);
+
+  offpal := strtoint(Offsetpal.Text);
+  mult := 1;
+  if (cores = 16) then
+    mult := 2;
+  Label2.Caption := 'Grafico ' + Tab_graf.cells[0, Tab_graf.Row] + '  Palheta '
+    + Tab_pal.cells[0, Tab_pal.Row] + chr(13) + chr(13) + inttostr(larg * mult)
+    + ' X ' + inttostr(alt) + chr(13) + inttostr(cores) + ' Cores';
+
+  col := 0;
+  lin := 0;
+  mat := offpal;
+  GroupBox6.Width := (larg * mult) + 4;
+  GroupBox6.height := (alt) + 8;
+  GroupBox6.Left := 515 + ((260 - (larg * mult)) div 2);
+  GroupBox6.top := -5 + ((265 - (alt)) div 2);
+  Imagem.picture.bitmap.height := alt;
+  Imagem.height := alt;
+
+  if cores = 16 then
+  begin
+    // ************************************************
+    // imagem.Picture.bitmap.PixelFormat:=pf4bit;
+    nvezes := larg * 2;
+    Imagem.picture.bitmap.Width := larg * 2;
+    Imagem.Width := larg * 2;
+  end
+  else
+  begin
+    nvezes := larg;
+    // ************************************************
+    // imagem.Picture.bitmap.PixelFormat:=pf8bit;
+    Imagem.picture.bitmap.Width := larg;
+    Imagem.Width := larg * 2;
+  end;
+  xx := 1;
+  xx2 := 1;
+  k := 0;
+  setlength(aGrafDef, ((modif - 1999) * mult));
+
+  while (xx < (((modif - 1999) * mult) + 1)) do
+  begin
+    if cores = 16 then
+    begin
+      if (xx mod 2) = 1 then
+      begin
+        if length(aNovo[1999 + xx2]) = 1 then
+          aNovo[1999 + xx2] := '0' + aNovo[1999 + xx2];
+        pos := strtoint('$' + copy(aNovo[1999 + xx2], 2, 1));
+      end
+      else
+      begin
+        pos := strtoint('$' + copy(aNovo[1999 + xx2], 1, 1));
+        xx2 := xx2 + 1;
+      end;
+
+    end
+    else
+      pos := strtoint('$' + aNovo[1999 + xx]);
+    aGrafDef[k] := pos;
+    cor := aGraf2[mat + (pos * 2) + 1] + aGraf2[mat + (pos * 2)];
+    k := k + 1;
+    xx := xx + 1;
+
+    Imagem.canvas.pixels[col, lin] := torgb(cor, 0);
+
+    col := col + 1;
+    if col = (nvezes) then
+    begin
+      col := 0;
+      lin := lin + 1;
+    end;
+
+  end;
+  screen.cursor := crDefault;
+  k := k - 1;
+
+end;
+
+procedure TForm1.apagatab(tipo: byte);
+var
+  g: byte;
+begin
+
+  { Define tamanho das Colunas }
+  if tipo = 1 then
+  begin
+    Tab_graf.RowCount := 2;
+    Tab_graf.FixedRows := 1;
+
+    for g := 0 to 7 do
+      Tab_graf.cells[g, 1] := '';
+    Tab_graf.ColWidths[0] := 30;
+    Tab_graf.ColWidths[1] := 80;
+    Tab_graf.ColWidths[2] := 90;
+    Tab_graf.ColWidths[3] := 60;
+    Tab_graf.ColWidths[4] := 50;
+    Tab_graf.ColWidths[5] := 50;
+    Tab_graf.ColWidths[6] := 50;
+    Tab_graf.ColWidths[7] := 52;
+    { Cabeçalho Gráfico }
+    Tab_graf.cells[0, 0] := 'ID';
+    Tab_graf.cells[1, 0] := 'Offset Decimal';
+    Tab_graf.cells[2, 0] := 'Offset Hexadec.';
+    Tab_graf.cells[3, 0] := 'VRAM X';
+    Tab_graf.cells[4, 0] := 'VRAM Y';
+    Tab_graf.cells[5, 0] := 'Largura';
+    Tab_graf.cells[6, 0] := 'Altura';
+    Tab_graf.cells[7, 0] := 'Tamanho';
+  end;
+
+  if tipo = 2 then
+  begin
+    Tab_pal.RowCount := 2;
+    Tab_pal.FixedRows := 1;
+    for g := 0 to 8 do
+      Tab_pal.cells[g, 1] := '';
+    Tab_pal.ColWidths[0] := 30;
+    Tab_pal.ColWidths[1] := 80;
+    Tab_pal.ColWidths[2] := 90;
+    Tab_pal.ColWidths[3] := 60;
+    Tab_pal.ColWidths[4] := 50;
+    Tab_pal.ColWidths[5] := 50;
+    Tab_pal.ColWidths[6] := 50;
+    Tab_pal.ColWidths[7] := 52;
+    Tab_pal.ColWidths[8] := 40;
+    { Cabeçalho Palheta }
+    Tab_pal.cells[0, 0] := 'ID';
+    Tab_pal.cells[1, 0] := 'Offset Decimal';
+    Tab_pal.cells[2, 0] := 'Offset Hexadec.';
+    Tab_pal.cells[3, 0] := 'VRAM X';
+    Tab_pal.cells[4, 0] := 'VRAM Y';
+    Tab_pal.cells[5, 0] := 'Largura';
+    Tab_pal.cells[6, 0] := 'Altura';
+    Tab_pal.cells[7, 0] := 'Tamanho';
+    Tab_pal.cells[8, 0] := 'Cores';
+  end;
+
+end;
+
+procedure TForm1.SpeedButton6Click(Sender: TObject);
+var
+  ArquivoTexto: TextFile;
+  mm: integer;
+begin
+
+  if gravartxt.execute then
+  begin
+    AssignFile(ArquivoTexto, gravartxt.FileName);
+
+    ReWrite(ArquivoTexto);
+    Writeln(ArquivoTexto, 'Graficos  -  Arquivo: ' + Label1.Caption);
+    Writeln(ArquivoTexto,
+      '------------------------------------------------------------------------------------------------------------------------------');
+    Writeln(ArquivoTexto,
+      'ID     Offset Dec.     Offset Hexa      VRAM X         VRAM Y        Largura        Altura        Tamanho');
+    Writeln(ArquivoTexto,
+      '------------------------------------------------------------------------------------------------------------------------------');
+    Writeln(ArquivoTexto, ' ');
+    for mm := 1 to Tab_graf.RowCount - 1 do
+    begin
+      Write(ArquivoTexto, preenche(Tab_graf.cells[0, mm], 5, 3));
+      Write(ArquivoTexto, preenche(Tab_graf.cells[1, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_graf.cells[2, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_graf.cells[3, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_graf.cells[4, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_graf.cells[5, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_graf.cells[6, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_graf.cells[7, mm], 15, 3));
+      Writeln(ArquivoTexto, ' ');
+    end;
+    Writeln(ArquivoTexto, ' ');
+    Writeln(ArquivoTexto, ' ');
+    Writeln(ArquivoTexto, ' ');
+    Writeln(ArquivoTexto, 'Palhetas  -  Arquivo: ' + Label4.Caption);
+    Writeln(ArquivoTexto,
+      '------------------------------------------------------------------------------------------------------------------------------');
+    Writeln(ArquivoTexto,
+      'ID     Offset Dec.    Offset Hexa      VRAM X          VRAM Y         Largura        Altura        Tamanho        Cores');
+    Writeln(ArquivoTexto,
+      '------------------------------------------------------------------------------------------------------------------------------');
+    Writeln(ArquivoTexto, ' ');
+    for mm := 1 to Tab_pal.RowCount - 1 do
+    begin
+      Write(ArquivoTexto, preenche(Tab_pal.cells[0, mm], 5, 3));
+      Write(ArquivoTexto, preenche(Tab_pal.cells[1, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_pal.cells[2, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_pal.cells[3, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_pal.cells[4, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_pal.cells[5, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_pal.cells[6, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_pal.cells[7, mm], 15, 3));
+      Write(ArquivoTexto, preenche(Tab_pal.cells[8, mm], 15, 3));
+      Writeln(ArquivoTexto, ' ');
+    end;
+    Writeln(ArquivoTexto, ' ');
+    Writeln(ArquivoTexto, ' ');
+    Writeln(ArquivoTexto,
+      'Obs: Se a palheta for de 4 bits, multiplicar a largura do grafico por 2');
+
+    CloseFile(ArquivoTexto);
+    showmessage('Arquivo Criado.');
+  end;
+end;
+
+function TForm1.preenche(str: string; tam: integer; tipo: byte): string;
+var
+  n: byte;
+  tamstr: integer;
+begin
+  result := str;
+  tamstr := tam - length(str);
+  if tipo = 1 then
+    for n := 1 to tamstr do
+      result := result + ' ';
+  if tipo = 2 then
+    for n := 1 to tamstr do
+      result := ' ' + result;
+  if tipo = 3 then
+  begin
+    for n := 1 to (tamstr div 2) do
+      result := result + ' ';
+
+    for n := 1 to (tamstr div 2) do
+      result := ' ' + result;
+
+    if (tamstr mod 2) = 1 then
+      result := result + ' ';
+  end;
+end;
+
+procedure TForm1.SpeedButton5Click(Sender: TObject);
+begin
+  visualiza(1);
+  gravar;
+end;
+
+procedure TForm1.gravar;
+TYPE
+  TByteArray = ARRAY [WORD] OF byte;
+  pByteArray = ^TByteArray;
+
+var
+  col, lin, alt, larg, offpal: integer;
+  abc: TRect;
+  arqtim: boolean;
+  cabectim, cabec2tim, dado: string;
+  palx, paly: integer;
+  vramx, vramy, posicao, largura2: integer;
+  pospal, pospal2: string;
+  tmpstr, tmpstr2: string;
+  Arquivo: TextFile;
+  mm: integer;
+  arqbmp: Tbitmap;
+  NewPalette: TMaxLogPalette;
+  lab: TShape;
+  i: integer;
+begin
+
+  NewPalette.palVersion := $0300; // "Magic Number" for Windows LogPalette
+
+  arqbmp := Tbitmap.Create;
+  arqtim := false;
+  if ComboBox1.ItemIndex = 0 then
+  begin
+    arqtim := true;
+    Salvar.filter := '*.tim';
+    Salvar.DefaultExt := 'tim';
+
+  end
+  else
+  begin
+    Salvar.filter := '*.bmp';
+    Salvar.DefaultExt := 'bmp';
+  end;
+  if not(Salvar.execute) then
+    exit;
+
+  if arqtim then
+  begin
+    if (RadioButton4.checked) then
+    begin
+      palx := 0;
+      paly := 480;
+      vramx := 0;
+      vramy := 0;
+    end
+    else
+    begin
+      palx := strtoint(Tab_pal.cells[3, Tab_pal.Row]);
+      paly := strtoint(Tab_pal.cells[4, Tab_pal.Row]);
+      vramx := strtoint(Tab_graf.cells[3, Tab_graf.Row]);
+      vramy := strtoint(Tab_graf.cells[4, Tab_graf.Row]);
+    end;
+
+    pospal := inttohex(palx, 4);
+    pospal2 := copy(pospal, 3, 2) + copy(pospal, 1, 2);
+    pospal := inttohex(paly, 4);
+    pospal2 := pospal2 + copy(pospal, 3, 2) + copy(pospal, 1, 2);
+  end;
+
+  alt := strtoint(altman.Text);
+  larg := strtoint(largman.Text);
+  offpal := strtoint(Offsetpal.Text);
+  if (cores = 16) then
+    larg := larg * 2;
+  col := 0;
+  lin := 0;
+
+  if (arqtim) and (cores = 16) then
+  begin
+    cabectim := '10000000080000002C000000' + pospal2 + '10000100';
+    cabec2tim := inttohex(((alt * larg) + 12), 4);
+    cabec2tim := copy(cabec2tim, 3, 2) + copy(cabec2tim, 1, 2) + '0000';
+    tmpstr := inttohex(vramx, 4);
+    tmpstr2 := copy(tmpstr, 3, 2) + copy(tmpstr, 1, 2);
+    cabec2tim := cabec2tim + tmpstr2;
+    tmpstr := inttohex(vramy, 4);
+    tmpstr2 := copy(tmpstr, 3, 2) + copy(tmpstr, 1, 2);
+    cabec2tim := cabec2tim + tmpstr2;
+    tmpstr := inttohex((larg div 4), 4);
+    tmpstr2 := copy(tmpstr, 3, 2) + copy(tmpstr, 1, 2);
+    cabec2tim := cabec2tim + tmpstr2;
+    tmpstr := inttohex(alt, 4);
+    tmpstr2 := copy(tmpstr, 3, 2) + copy(tmpstr, 1, 2);
+    cabec2tim := cabec2tim + tmpstr2;
+  end;
+
+  if (arqtim) and (cores = 256) then
+  begin
+    cabectim := '10000000090000000C020000' + pospal2 + '00010100';
+    cabec2tim := inttohex(((alt * larg) + 12), 4);
+    cabec2tim := copy(cabec2tim, 3, 2) + copy(cabec2tim, 1, 2) + '0000';
+    tmpstr := inttohex(vramx, 4);
+    tmpstr2 := copy(tmpstr, 3, 2) + copy(tmpstr, 1, 2);
+    cabec2tim := cabec2tim + tmpstr2;
+    tmpstr := inttohex(vramy, 4);
+    tmpstr2 := copy(tmpstr, 3, 2) + copy(tmpstr, 1, 2);
+    cabec2tim := cabec2tim + tmpstr2;
+    tmpstr := inttohex((larg div 2), 4);
+    tmpstr2 := copy(tmpstr, 3, 2) + copy(tmpstr, 1, 2);
+    cabec2tim := cabec2tim + tmpstr2;
+    tmpstr := inttohex(alt, 4);
+    tmpstr2 := copy(tmpstr, 3, 2) + copy(tmpstr, 1, 2);
+    cabec2tim := cabec2tim + tmpstr2;
+  end;
+
+  if arqtim = false then
+  begin
+
+    abc := rect(0, 0, larg, alt);
+    // imagem.Picture.Bitmap.canvas.CopyRect(abc, imagem.canvas, abc);
+
+    if cores = 16 then
+    begin
+      arqbmp.PixelFormat := pf4bit;
+      NewPalette.palNumEntries := 16;
+      FOR i := 0 TO 16 DO
+      BEGIN
+        lab := TShape(findcomponent('Shape' + inttostr(i)));
+        NewPalette.palPalEntry[i].peRed := GetRValue(lab.Brush.color);
+        NewPalette.palPalEntry[i].peGreen := GetGValue(lab.Brush.color);
+        NewPalette.palPalEntry[i].peBlue := GetBValue(lab.Brush.color);
+
+        NewPalette.palPalEntry[i].peFlags := PC_NOCOLLAPSE;
+      END;
+      arqbmp.Palette := CreatePalette(pLogPalette(@NewPalette)^);
+
+    end;
+
+    if cores = 256 then
+    begin
+      arqbmp.PixelFormat := pf8bit;
+      NewPalette.palNumEntries := 256;
+
+      FOR i := 0 TO 255 DO
+      BEGIN
+        lab := TShape(findcomponent('Shape' + inttostr(i)));
+        NewPalette.palPalEntry[i].peRed := GetRValue(lab.Brush.color);
+        NewPalette.palPalEntry[i].peGreen := GetGValue(lab.Brush.color);
+        NewPalette.palPalEntry[i].peBlue := GetBValue(lab.Brush.color);
+        NewPalette.palPalEntry[i].peFlags := PC_NOCOLLAPSE;
+      END;
+
+      arqbmp.Palette := CreatePalette(pLogPalette(@NewPalette)^);
+
+    end;
+
+    arqbmp.Width := Imagem.picture.bitmap.Width;
+    arqbmp.height := Imagem.picture.bitmap.height;
+
+    arqbmp.canvas.CopyRect(abc, Imagem.canvas, abc);
+    arqbmp.SaveToFile(Salvar.FileName);
+
+    // imagem.picture.Bitmap.SaveToFile(salvar.filename);
+    // imagem.picture.bitmap.FreeImage;
+    showmessage('Arquivo Exportado');
+  end
+  else
+  begin
+
+    AssignFile(Arquivo, Salvar.FileName);
+    ReWrite(Arquivo);
+
+    mm := 1;
+    while (mm < length(cabectim)) or (mm = length(cabectim)) do
+    begin
+      dado := chr(strtoint('$' + copy(cabectim, mm, 2)));
+      write(Arquivo, dado);
+      mm := mm + 2;
+    end;
+
+    posicao := strtoint(Offsetpal.Text);
+    mm := 0;
+    while (mm < (cores * 2)) do
+    begin
+      write(Arquivo, chr(strtoint('$' + aGraf2[posicao])));
+      mm := mm + 1;
+      posicao := posicao + 1;
+    end;
+
+    mm := 1;
+    while (mm < length(cabec2tim)) or (mm = length(cabec2tim)) do
+    begin
+      dado := chr(strtoint('$' + copy(cabec2tim, mm, 2)));
+      write(Arquivo, dado);
+      mm := mm + 2;
+    end;
+
+    mm := 0;
+    largura2 := larg;
+    if cores = 16 then
+      largura2 := larg div 2;
+
+    for mm := 0 to ((alt * largura2) - 1) do
+      write(Arquivo, chr(strtoint('$' + aNovo[2000 + mm])));
+    CloseFile(Arquivo);
+    showmessage('Arquivo Exportado');
+
+  end;
+end;
+
+procedure TForm1.Tab_grafClick(Sender: TObject);
+begin
+
+  Offsetgraf.Text := Tab_graf.cells[1, Tab_graf.Row];
+  largman.Text := Tab_graf.cells[5, Tab_graf.Row];
+  altman.Text := Tab_graf.cells[6, Tab_graf.Row];
+  if FlagVi2 and FlagVi1 then
+    visualiza(1);
+end;
+
+procedure TForm1.Tab_palClick(Sender: TObject);
+begin
+
+  Offsetpal.Text := Tab_pal.cells[1, Tab_pal.Row];
+  if strtoint(Tab_pal.cells[8, Tab_pal.Row]) = 16 then
+  begin
+    Coresman.ItemIndex := 0;
+    cores := 16;
+  end
+  else
+  begin
+    Coresman.ItemIndex := 1;
+    cores := 256;
+  end;
+  screen.cursor := crHourGlass;
+  if FlagVi1 and FlagVi2 then
+    visualiza(1);
+  montaclut;
+
+end;
+
+procedure TForm1.RadioButton2Click(Sender: TObject);
+begin
+  Tab_graf.visible := false;
+  if FlagVi1 = true then
+  begin
+    Offsetgraf.enabled := true;
+    largman.enabled := true;
+    altman.enabled := true;
+    pinta(1);
+    Offsetgraf.SetFocus;
+
+  end;
+end;
+
+procedure TForm1.RadioButton4Click(Sender: TObject);
+begin
+  Tab_pal.visible := false;
+  if FlagVi2 = true then
+  begin
+    Offsetpal.enabled := true;
+    Coresman.enabled := true;
+    Coreslab.enabled := true;
+    pinta(2);
+    Offsetpal.SetFocus;
+  end;
+end;
+
+procedure TForm1.RadioButton1Click(Sender: TObject);
+begin
+
+  Tab_graf.visible := true;
+  Tab_graf.enabled := true;
+  largman.enabled := false;
+  altman.enabled := false;
+  Tab_graf.repaint;
+  Offsetgraf.enabled := false;
+end;
+
+procedure TForm1.RadioButton3Click(Sender: TObject);
+begin
+  Tab_pal.visible := true;
+  Tab_pal.enabled := true;
+  Tab_pal.repaint;
+  Offsetpal.enabled := false;
+  Coresman.enabled := false;
+  Coreslab.enabled := false;
+end;
+
+procedure TForm1.pinta(tipo: byte);
+begin
+  if tipo = 1 then
+  begin
+
+    Tab_graf.visible := false;
+
+  end;
+
+  if tipo = 2 then
+  begin
+    Tab_pal.visible := false;
+
+  end;
+end;
+
+procedure TForm1.OffsetpalChange(Sender: TObject);
+begin
+  if (RadioButton4.checked) and (Offsetgraf.Text <> '') and (largman.Text <> '')
+    and (altman.Text <> '') and (Offsetpal.Text <> '') and
+    (Coresman.ItemIndex <> -1) then
+    visualiza(1);
+
+  montaclut;
+end;
+
+procedure TForm1.CoresmanChange(Sender: TObject);
+begin
+  if Coresman.ItemIndex = 0 then
+    cores := 16
+  else
+    cores := 256;
+  if (RadioButton4.checked) and (Offsetgraf.Text <> '') and (largman.Text <> '')
+    and (altman.Text <> '') and (Offsetpal.Text <> '') and
+    (Coresman.ItemIndex <> -1) then
+    visualiza(1);
+
+  montaclut;
+end;
+
+procedure TForm1.montaclut;
+var
+  ncor: integer;
+  nvez: byte;
+  lab: TShape;
+
+begin
+
+  for ncor := 0 to 255 do
+  begin
+    lab := TShape(findcomponent('Shape' + inttostr(ncor)));
+    lab.visible := false;
+  end;
+
+  for ncor := 0 to cores - 1 do
+  begin
+    lab := TShape(findcomponent('Shape' + inttostr(ncor)));
+    lab.visible := true;
+  end;
+
+  for nvez := 0 to cores - 1 do
+  begin
+    lab := TShape(findcomponent('Shape' + inttostr(nvez)));
+    lab.Brush.color := torgb(aGraf2[strtoint(Offsetpal.Text) + ((nvez * 2) + 1)]
+      + aGraf2[strtoint(Offsetpal.Text) + (nvez * 2)], 0);
+
+  end;
+end;
+
+procedure TForm1.OffsetgrafChange(Sender: TObject);
+begin
+  if (RadioButton2.checked) and (Offsetgraf.Text <> '') and (largman.Text <> '')
+    and (altman.Text <> '') and (Offsetpal.Text <> '') and
+    (Coresman.ItemIndex <> -1) then
+    visualiza(1);
+
+end;
+
+procedure TForm1.largmanChange(Sender: TObject);
+begin
+  if (RadioButton2.checked) and (Offsetgraf.Text <> '') and (largman.Text <> '')
+    and (altman.Text <> '') and (Offsetpal.Text <> '') and
+    (Coresman.ItemIndex <> -1) then
+    visualiza(1);
+
+end;
+
+procedure TForm1.altmanChange(Sender: TObject);
+begin
+  if (RadioButton2.checked) and (Offsetgraf.Text <> '') and (largman.Text <> '')
+    and (altman.Text <> '') and (Offsetpal.Text <> '') and
+    (Coresman.ItemIndex <> -1) then
+    visualiza(1);
+
+end;
+
+procedure TForm1.SpeedButton2Click(Sender: TObject);
+begin
+  form4.Showmodal;
+end;
+
+procedure TForm1.ImagemClick(Sender: TObject);
+var
+  abc: TRect;
+  alt, larg: integer;
+begin
+  alt := strtoint(altman.Text);
+  larg := strtoint(largman.Text);
+
+  if cores = 16 then
+    larg := larg * 2;
+
+  form3.height := alt * 2 + 50;
+  form3.Width := larg * 2 + 20;
+  form3.Imagem.height := (alt * 2);
+  form3.Imagem.Width := (larg * 2);
+
+  abc := rect(0, 0, (larg * 2), (alt * 2));
+  form3.Imagem.canvas.StretchDraw(abc, Imagem.picture.bitmap);
+  form3.show;
+
+end;
+
+
+// --- Clut editor ---
+
+procedure TForm1.PegaRgb;
+begin
+  If ScrollBar1.Position = 0 Then
+    CorRed := 0;
+  If ScrollBar2.Position = 0 Then
+    CorGreen := 0;
+  If ScrollBar3.Position = 0 Then
+    CorBlue := 0;
+
+  If ScrollBar1.Position = 1 Then
+    CorRed := 8;
+  If ScrollBar2.Position = 1 Then
+    CorGreen := 8;
+  If ScrollBar3.Position = 1 Then
+    CorBlue := 8;
+
+  If ScrollBar1.Position = 2 Then
+    CorRed := 16;
+  If ScrollBar2.Position = 2 Then
+    CorGreen := 16;
+  If ScrollBar3.Position = 2 Then
+    CorBlue := 16;
+
+  If ScrollBar1.Position = 3 Then
+    CorRed := 24;
+  If ScrollBar2.Position = 3 Then
+    CorGreen := 24;
+  If ScrollBar3.Position = 3 Then
+    CorBlue := 24;
+
+  If ScrollBar1.Position = 4 Then
+    CorRed := 32;
+  If ScrollBar2.Position = 4 Then
+    CorGreen := 32;
+  If ScrollBar3.Position = 4 Then
+    CorBlue := 32;
+
+  If ScrollBar1.Position = 5 Then
+    CorRed := 41;
+  If ScrollBar2.Position = 5 Then
+    CorGreen := 41;
+  If ScrollBar3.Position = 5 Then
+    CorBlue := 41;
+
+  If ScrollBar1.Position = 6 Then
+    CorRed := 49;
+  If ScrollBar2.Position = 6 Then
+    CorGreen := 49;
+  If ScrollBar3.Position = 6 Then
+    CorBlue := 49;
+
+  If ScrollBar1.Position = 7 Then
+    CorRed := 57;
+  If ScrollBar2.Position = 7 Then
+    CorGreen := 57;
+  If ScrollBar3.Position = 7 Then
+    CorBlue := 57;
+
+  If ScrollBar1.Position = 8 Then
+    CorRed := 65;
+  If ScrollBar2.Position = 8 Then
+    CorGreen := 65;
+  If ScrollBar3.Position = 8 Then
+    CorBlue := 65;
+
+  If ScrollBar1.Position = 9 Then
+    CorRed := 74;
+  If ScrollBar2.Position = 9 Then
+    CorGreen := 74;
+  If ScrollBar3.Position = 9 Then
+    CorBlue := 74;
+
+  If ScrollBar1.Position = 10 Then
+    CorRed := 82;
+  If ScrollBar2.Position = 10 Then
+    CorGreen := 82;
+  If ScrollBar3.Position = 10 Then
+    CorBlue := 82;
+
+  If ScrollBar1.Position = 11 Then
+    CorRed := 90;
+  If ScrollBar2.Position = 11 Then
+    CorGreen := 90;
+  If ScrollBar3.Position = 11 Then
+    CorBlue := 90;
+
+  If ScrollBar1.Position = 12 Then
+    CorRed := 98;
+  If ScrollBar2.Position = 12 Then
+    CorGreen := 98;
+  If ScrollBar3.Position = 12 Then
+    CorBlue := 98;
+
+  If ScrollBar1.Position = 13 Then
+    CorRed := 106;
+  If ScrollBar2.Position = 13 Then
+    CorGreen := 106;
+  If ScrollBar3.Position = 13 Then
+    CorBlue := 106;
+
+  If ScrollBar1.Position = 14 Then
+    CorRed := 115;
+  If ScrollBar2.Position = 14 Then
+    CorGreen := 115;
+  If ScrollBar3.Position = 14 Then
+    CorBlue := 115;
+
+  If ScrollBar1.Position = 15 Then
+    CorRed := 123;
+  If ScrollBar2.Position = 15 Then
+    CorGreen := 123;
+  If ScrollBar3.Position = 15 Then
+    CorBlue := 123;
+
+  If ScrollBar1.Position = 16 Then
+    CorRed := 131;
+  If ScrollBar2.Position = 16 Then
+    CorGreen := 131;
+  If ScrollBar3.Position = 16 Then
+    CorBlue := 131;
+
+  If ScrollBar1.Position = 17 Then
+    CorRed := 139;
+  If ScrollBar2.Position = 17 Then
+    CorGreen := 139;
+  If ScrollBar3.Position = 17 Then
+    CorBlue := 139;
+
+  If ScrollBar1.Position = 18 Then
+    CorRed := 148;
+  If ScrollBar2.Position = 18 Then
+    CorGreen := 148;
+  If ScrollBar3.Position = 18 Then
+    CorBlue := 148;
+
+  If ScrollBar1.Position = 19 Then
+    CorRed := 156;
+  If ScrollBar2.Position = 19 Then
+    CorGreen := 156;
+  If ScrollBar3.Position = 19 Then
+    CorBlue := 156;
+
+  If ScrollBar1.Position = 20 Then
+    CorRed := 164;
+  If ScrollBar2.Position = 20 Then
+    CorGreen := 164;
+  If ScrollBar3.Position = 20 Then
+    CorBlue := 164;
+
+  If ScrollBar1.Position = 21 Then
+    CorRed := 172;
+  If ScrollBar2.Position = 21 Then
+    CorGreen := 172;
+  If ScrollBar3.Position = 21 Then
+    CorBlue := 172;
+
+  If ScrollBar1.Position = 22 Then
+    CorRed := 180;
+  If ScrollBar2.Position = 22 Then
+    CorGreen := 180;
+  If ScrollBar3.Position = 22 Then
+    CorBlue := 180;
+
+  If ScrollBar1.Position = 23 Then
+    CorRed := 189;
+  If ScrollBar2.Position = 23 Then
+    CorGreen := 189;
+  If ScrollBar3.Position = 23 Then
+    CorBlue := 189;
+
+  If ScrollBar1.Position = 24 Then
+    CorRed := 197;
+  If ScrollBar2.Position = 24 Then
+    CorGreen := 197;
+  If ScrollBar3.Position = 24 Then
+    CorBlue := 197;
+
+  If ScrollBar1.Position = 25 Then
+    CorRed := 205;
+  If ScrollBar2.Position = 25 Then
+    CorGreen := 205;
+  If ScrollBar3.Position = 25 Then
+    CorBlue := 205;
+
+  If ScrollBar1.Position = 26 Then
+    CorRed := 213;
+  If ScrollBar2.Position = 26 Then
+    CorGreen := 213;
+  If ScrollBar3.Position = 26 Then
+    CorBlue := 213;
+
+  If ScrollBar1.Position = 27 Then
+    CorRed := 222;
+  If ScrollBar2.Position = 27 Then
+    CorGreen := 222;
+  If ScrollBar3.Position = 27 Then
+    CorBlue := 222;
+
+  If ScrollBar1.Position = 28 Then
+    CorRed := 230;
+  If ScrollBar2.Position = 28 Then
+    CorGreen := 230;
+  If ScrollBar3.Position = 28 Then
+    CorBlue := 230;
+
+  If ScrollBar1.Position = 29 Then
+    CorRed := 238;
+  If ScrollBar2.Position = 29 Then
+    CorGreen := 238;
+  If ScrollBar3.Position = 29 Then
+    CorBlue := 238;
+
+  If ScrollBar1.Position = 30 Then
+    CorRed := 246;
+  If ScrollBar2.Position = 30 Then
+    CorGreen := 246;
+  If ScrollBar3.Position = 30 Then
+    CorBlue := 246;
+
+  If ScrollBar1.Position = 31 Then
+    CorRed := 255;
+  If ScrollBar2.Position = 31 Then
+    CorGreen := 255;
+  If ScrollBar3.Position = 31 Then
+    CorBlue := 255;
+end;
+
+procedure TForm1.ScrollBar1Change(Sender: TObject);
+var
+  lab: TLabel;
+begin
+  PegaRgb;
+  Label266.Caption := inttostr(CorRed);
+  Panel2.color := rgb(CorRed, 0, 0);
+  CorRgb.color := rgb(CorRed, CorGreen, CorBlue);
+  lab := TLabel(findcomponent('Clut' + inttostr(numlabel)));
+  lab.color := CorRgb.color;
+  if not Bug1 then
+  begin
+    aPalMod[numlabel] := ToHexa(colortorgb(lab.color));
+    mudapaleta;
+  end
+  else
+    Bug1 := false;
+
+end;
+
+procedure TForm1.ScrollBar2Change(Sender: TObject);
+var
+  lab: TLabel;
+begin
+  PegaRgb;
+  Label267.Caption := inttostr(CorGreen);
+  Panel3.color := rgb(0, CorGreen, 0);
+  CorRgb.color := rgb(CorRed, CorGreen, CorBlue);
+  lab := TLabel(findcomponent('Clut' + inttostr(numlabel)));
+  lab.color := CorRgb.color;
+  if not bug2 then
+  begin
+    aPalMod[numlabel] := ToHexa(colortorgb(lab.color));
+    mudapaleta;
+  end
+  else
+    bug2 := false;
+end;
+
+procedure TForm1.ScrollBar3Change(Sender: TObject);
+var
+  lab: TLabel;
+begin
+  PegaRgb;
+  Label268.Caption := inttostr(CorBlue);
+  Panel4.color := rgb(0, 0, CorBlue);
+  CorRgb.color := rgb(CorRed, CorGreen, CorBlue);
+  lab := TLabel(findcomponent('Clut' + inttostr(numlabel)));
+  lab.color := CorRgb.color;
+  if not bug3 then
+  begin
+    aPalMod[numlabel] := ToHexa(colortorgb(lab.color));
+    mudapaleta;
+  end
+  else
+    bug3 := false;
+
+end;
+
+procedure TForm1.terminaform;
+var
+  ncor: integer;
+  lab: TLabel;
+
+begin
+
+  for ncor := 0 to 255 do
+  begin
+    lab := TLabel(findcomponent('Clut' + inttostr(ncor)));
+    lab.visible := false;
+    if ncor < cores then
+    begin
+      lab.visible := true;
+      lab.color := torgb(aPalDef[ncor], 0);
+    end;
+  end;
+
+  SelCor.Left := Clut0.Left - 1;
+  SelCor.top := Clut0.top - 1;
+  SelCor2.Left := SelCor.Left - 1;
+  SelCor2.top := SelCor.top - 1;
+  Bug1 := true;
+  bug2 := true;
+  bug3 := true;
+  numlabel := 0;
+  ScrollBar1.Position := torgb(aPalMod[numlabel], 4);
+  ScrollBar2.Position := torgb(aPalMod[numlabel], 5);
+  ScrollBar3.Position := torgb(aPalMod[numlabel], 6);
+  dobro := true;
+
+end;
+
+procedure TForm1.Image1Click(Sender: TObject);
+var
+  abc: TRect;
+begin
+
+  if dobro then
+  begin
+    abc := rect(0, 0, Image1.picture.bitmap.Width div 2,
+      Image1.picture.bitmap.height div 2);
+    Image1.canvas.StretchDraw(abc, Image1.picture.bitmap);
+    Image1.picture.bitmap.Width := Image1.Width div 2;
+    Image1.picture.bitmap.height := Image1.height div 2;
+    Image1.Width := Image1.Width div 2;
+    Image1.height := Image1.height div 2;
+    dobro := false;
+
+  end
+  else
+  begin
+    imgtmp.Width := Image1.Width * 2;
+    imgtmp.height := Image1.height * 2;
+    imgtmp.picture.bitmap.Width := Image1.Width * 2;
+    imgtmp.picture.bitmap.height := Image1.height * 2;
+    abc := rect(0, 0, Image1.Width * 2, Image1.height * 2);
+    imgtmp.canvas.StretchDraw(abc, Image1.picture.bitmap);
+    dobro := true;
+    Image1.Width := imgtmp.Width;
+    Image1.height := imgtmp.height;
+    Image1.picture.bitmap.Width := imgtmp.picture.bitmap.Width;
+    Image1.picture.bitmap.height := imgtmp.picture.bitmap.height;
+    Image1.picture.bitmap := imgtmp.picture.bitmap;
+  end;
+
+end;
+
+procedure TForm1.Clickclut(Sender: TObject);
+var
+  qtde: integer;
+  nome: string;
+begin
+  Bug1 := true;
+  bug2 := true;
+  bug3 := true;
+  SelCor.Left := TLabel(Sender).Left - 1;
+  SelCor.top := TLabel(Sender).top - 1;
+  SelCor2.Left := SelCor.Left - 1;
+  SelCor2.top := SelCor.top - 1;
+
+  qtde := length(TLabel(Sender).Name) - 4;
+  nome := TLabel(Sender).Name;
+  numlabel := strtoint(copy(nome, 5, qtde));
+
+  ScrollBar1.Position := torgb(aPalMod[numlabel], 4);
+  ScrollBar2.Position := torgb(aPalMod[numlabel], 5);
+  ScrollBar3.Position := torgb(aPalMod[numlabel], 6);
+
+end;
+
+procedure TForm1.SpeedButton7Click(Sender: TObject);
+var
+  nvez: integer;
+  lab: TLabel;
+begin
+  for nvez := 0 to cores - 1 do
+  begin
+    lab := TLabel(findcomponent('Clut' + inttostr(nvez)));
+    lab.color := torgb(aPalDef[nvez], 0);
+    aPalMod[nvez] := aPalDef[nvez];
+  end;
+  Bug1 := true;
+  bug2 := true;
+  bug3 := true;
+  mudapaleta;
+  ScrollBar1.Position := torgb(aPalMod[numlabel], 4);
+  ScrollBar2.Position := torgb(aPalMod[numlabel], 5);
+  ScrollBar3.Position := torgb(aPalMod[numlabel], 6);
+
+end;
+
+procedure TForm1.mudapaleta;
+var
+  alt, larg, z, m, m2: integer;
+  abc: TRect;
+begin
+
+  z := 0;
+  m := 0;
+  m2 := 0;
+  alt := Image1.height;
+  larg := Image1.Width;
+  if dobro then
+  begin
+    alt := alt div 2;
+    larg := larg div 2;
+  end;
+  Image1.height := alt;
+  Image1.Width := larg;
+  Image1.picture.bitmap.height := alt;
+  Image1.picture.bitmap.Width := larg;
+  while length(aGrafDef) > z do // +++++++++++++++++++++++
+  begin
+    Image1.canvas.pixels[m, m2] := torgb(aPalMod[aGrafDef[z]], 0); // ++++++++++
+    z := z + 1;
+    if m + 1 = larg then
+    begin
+      m := 0;
+      m2 := m2 + 1;
+    end
+    else
+      m := m + 1;
+
+  end;
+
+  if dobro then
+  begin
+
+    imgtmp.Width := Image1.Width * 2;
+    imgtmp.height := Image1.height * 2;
+    imgtmp.picture.bitmap.Width := Image1.Width * 2;
+    imgtmp.picture.bitmap.height := Image1.height * 2;
+    abc := rect(0, 0, Image1.Width * 2, Image1.height * 2);
+    imgtmp.canvas.StretchDraw(abc, Image1.picture.bitmap);
+    Image1.Width := imgtmp.Width;
+    Image1.height := imgtmp.height;
+    Image1.picture.bitmap.Width := imgtmp.picture.bitmap.Width;
+    Image1.picture.bitmap.height := imgtmp.picture.bitmap.height;
+    Image1.picture.bitmap := imgtmp.picture.bitmap;
+
+  end;
+
+end;
+
+procedure TForm1.SpeedButton8Click(Sender: TObject);
+var
+  abc: TRect;
+  nvez: integer;
+begin
+  Button4.enabled := true;
+  PageControl1.pages[0].TabVisible := true;
+  if dobro then
+  begin
+    Imagem.picture.Assign(nil);
+    abc := rect(0, 0, Image1.picture.bitmap.Width div 2,
+      Image1.picture.bitmap.height div 2);
+    Imagem.canvas.StretchDraw(abc, Image1.picture.bitmap);
+    Imagem.picture.bitmap.Width := Image1.Width div 2;
+    Imagem.picture.bitmap.height := Image1.height div 2;
+    Imagem.Width := Image1.Width div 2;
+    Imagem.height := Image1.height div 2;
+
+  end
+  else
+  begin
+    Imagem.picture.Assign(nil);
+    Imagem.picture.bitmap := Image1.picture.bitmap;
+  end;
+  nvez := 0;
+  while cores > nvez do
+  begin
+    aGraf2[strtoint(Offsetpal.Text) + ((nvez * 2) + 1)] :=
+      copy(aPalMod[nvez], 1, 2);
+    aGraf2[strtoint(Offsetpal.Text) + (nvez * 2)] := copy(aPalMod[nvez], 3, 2);
+    nvez := nvez + 1;
+  end;
+  montaclut;
+  PageControl1.ActivePageIndex := 0;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  lab: TLabel;
+begin
+  lab := TLabel(findcomponent('Clut' + inttostr(numlabel)));
+  copiacor := lab.color;
+  Button2.enabled := true;
+
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+var
+  lab: TLabel;
+begin
+  lab := TLabel(findcomponent('Clut' + inttostr(numlabel)));
+  lab.color := copiacor;
+  if not Bug1 then
+  begin
+    aPalMod[numlabel] := ToHexa(colortorgb(lab.color));
+    Bug1 := true;
+    bug2 := true;
+    bug3 := true;
+    ScrollBar1.Position := torgb(aPalMod[numlabel], 4);
+    ScrollBar2.Position := torgb(aPalMod[numlabel], 5);
+    ScrollBar3.Position := torgb(aPalMod[numlabel], 6);
+    mudapaleta;
+  end
+  else
+    Bug1 := false;
+end;
+
+procedure TForm1.PageControl1Change(Sender: TObject);
+var
+  nvez, alt, larg: integer;
+  abc: TRect;
+
+begin
+
+  if (PageControl1.ActivePage.TabIndex = 1) then
+  begin
+
+    PageControl1.pages[0].TabVisible := false;
+    alt := strtoint(altman.Text);
+    larg := strtoint(largman.Text);
+    if cores = 16 then
+      larg := larg * 2;
+
+    setlength(aPalMod, (cores + 1));
+    setlength(aPalDef, (cores + 1));
+
+    for nvez := 0 to cores do
+    begin
+      aPalMod[nvez] := aGraf2[strtoint(Offsetpal.Text) + ((nvez * 2) + 1)] +
+        aGraf2[strtoint(Offsetpal.Text) + (nvez * 2)];
+      aPalDef[nvez] := aPalMod[nvez];
+    end;
+
+    Image1.picture.Assign(nil);
+    Image1.height := (alt * 2);
+    Image1.Width := (larg * 2);
+    abc := rect(0, 0, (larg * 2), (alt * 2));
+    Image1.canvas.StretchDraw(abc, Imagem.picture.bitmap);
+    Image1.repaint;
+
+    terminaform;
+
+  end;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  PageControl1.pages[0].TabVisible := true;
+  PageControl1.ActivePageIndex := 0;
+end;
+
+function TForm1.tamanho(off: integer): integer;
+var
+  orig: integer;
+  k: integer;
+  k2: integer;
+  j: integer;
+  k3: integer;
+  i: integer;
+  tmp: integer;
+  bb: integer;
+  bits: byte;
+  counter: integer;
+begin
+
+  counter := 0;
+  i := 0;
+  orig := off;
+
+  While (true) do
+  begin
+    If (i And 256) = 0 Then
+    begin
+      k := (strtoint('$' + aGraf[orig])) And 255;
+      orig := orig + 1;
+      counter := counter + 1;
+      i := (k Or 65280);
+    end;
+    k2 := (strtoint('$' + aGraf[orig])) And 255;
+
+    If (i And 1) = 0 Then
+    begin
+      orig := orig + 1;
+      counter := counter + 1;
+    End
+    else
+    begin
+      If (k2 And 128) <> 0 Then
+      begin
+        orig := orig + 1;
+        counter := counter + 1;
+        If (k2 And 64) <> 0 Then
+        begin
+          k := k2 And 255;
+          k3 := k - 185;
+          If k = 255 Then
+          begin
+            tamanho := counter;
+            exit;
+          end;
+          repeat
+            k2 := (strtoint('$' + aGraf[orig])) And 255;
+            orig := orig + 1;
+            counter := counter + 1;
+            k3 := k3 - 1;
+          until (k3 < 0);
+          i := i shr 1;
+          continue;
+
+        end;
+        j := (k2 And 15) + 1;
+        k3 := (k2 shr 4) - 7;
+      End
+      else
+      begin
+        j := (strtoint('$' + aGraf[orig + 1])) And 255;
+        orig := orig + 2;
+        counter := counter + 2;
+        k3 := (k2 shr 2) + 2;
+        j := j Or (k2 And 3) shl 8;
+      End;
+      repeat
+        k3 := k3 - 1;
+      until (k3 < 0);
+    End;
+    i := i shr 1;
+  end;
+
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+
+var
+  x, y, z: integer;
+  Arq1: TFileStream;
+begin
+  If Salvarbin.execute then
+  begin
+    Arq1 := TFileStream.Create(Salvarbin.FileName, fmCreate);
+    x := length(aGraf2);
+
+    for y := 0 to x - 1 do
+    begin
+      z := strtoint('$' + aGraf2[y]);
+      Arq1.Write(z, 1);
+
+    end;
+  end;
+end;
+
+end.
